@@ -7,21 +7,22 @@ public class ChangeOddIndexToUpperCase {
 
 String test = "changeme";
 char odd []= test.toCharArray();
-//to hold updated string
-StringBuffer oddupper = new StringBuffer();
-for(int i=0; i<odd.length;i++) {
+for(int i=0;i<odd.length;i++) {
 	
-	char index = odd[i];
-	
-	if(odd[i]%2!=0) {
+	if(i%2==0) {
 		
-		index = Character.toUpperCase(index);
+	System.out.print(odd[i]);	
+	}
+	else
+	{
+		
+		System.out.print(Character.toUpperCase(odd[i]));	
+	}
+		
 	}
 	
-	oddupper.append(index);
 }
 
-System.out.println("the odd charactor updated in uppercase as "+oddupper.toString());
 	}
 
-}
+
